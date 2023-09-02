@@ -1,0 +1,14 @@
+
+public class Source {
+	       				
+	static int Sum(int a, int b, int c) {
+		return a+b+c;
+	}
+	public static void main(String[] args) {
+		 System.out.println(Sum(2,4,5));   
+		 System.out.println(Sum(9,0,44)); 
+		 System.out.println(Sum(54,98,78)); 
+		 System.out.println(Sum(122,874,509)); 
+		
+	}
+}

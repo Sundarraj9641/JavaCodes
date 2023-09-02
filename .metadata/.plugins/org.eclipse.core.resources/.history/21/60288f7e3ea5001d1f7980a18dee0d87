@@ -1,0 +1,33 @@
+
+
+class box{              //class
+	int length;         //instance variables
+	int breath;
+	int height;
+	
+	 /*no need to give the arguments, because this method is inside the class.
+	  	which uses the instance variables. */
+	  
+	int volume() {     //method
+		return length*breath*height; 
+	}
+	
+	void SetDim(int l, int b, int h) {
+		length = l;
+		breath = b;
+		height = h;
+	}
+} 
+	
+
+public class Source {
+	public static void main(String[] args) {
+		box blackbox = new box();
+		blackbox.SetDim(2, 8, 33);
+		box woodbox = new box(); //another object
+		woodbox.SetDim(83, 66, 22);
+		
+		System.out.println("vol of blackbox" +" " + blackbox.volume()); 
+		System.out.println("vol of woodbox" + " " + woodbox.volume()); 
+	}	
+}

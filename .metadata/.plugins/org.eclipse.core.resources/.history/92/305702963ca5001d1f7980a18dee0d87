@@ -1,0 +1,21 @@
+
+
+class box{
+	int length;
+	int breath;
+	int height;
+	
+	int volume() {
+		return length*breath*height;
+	}
+}
+public class Source {
+	public static void main(String[] args) {
+		box blackbox = new box();
+
+		blackbox.length=4;
+		blackbox.breath=8;
+		blackbox.height=7;
+		System.out.println(blackbox.volume()); 
+	}	
+}

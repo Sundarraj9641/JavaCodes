@@ -1,0 +1,35 @@
+
+
+class box{              //class
+	int length;         //instance variables
+	int breath;
+	int height;
+	  
+	int volume() {     //method to find volume
+		return length*breath*height; 
+	}
+	
+	
+	box(int l, int b, int h){		//constructor
+		length = l;
+		breath = b;
+		height = h;
+	}
+} 
+	
+
+public class Source {
+	public static void main(String[] args) {
+		// we can assign the value directly in the object for constructor
+		box blackbox = new box(3,5,7);  
+		
+		System.out.println("vol of blackbox" +" " + blackbox.volume()); //invoke method
+		
+		// we can assign the value directly in the object for constructor
+		box woodbox = new box(9,7,5);   //another object
+	
+		
+		System.out.println("vol of woodbox" + " " + woodbox.volume());
+		
+	}	
+}

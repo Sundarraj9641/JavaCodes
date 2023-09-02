@@ -1,0 +1,31 @@
+
+
+class box{              //class
+	int length;         //instance variables
+	int breath;
+	int height;
+	
+	 /*no need to give the arguments, because this method is inside the class.
+	  	which uses the instance variables.
+	  */
+	int volume() {     //method
+		return length*breath*height; 
+	}
+}
+public class Source {
+	public static void main(String[] args) {
+		box blackbox = new box();
+
+		blackbox.length=4;		//values assigned to the non argument method
+		blackbox.breath=8;
+		blackbox.height=7;
+		
+		box woodbox = new box(); //another object
+		
+		woodbox.length=5;		
+		woodbox.breath=1;
+		woodbox.height=90;
+		System.out.println("vol of blackbox" + blackbox.volume()); //calling the method
+		System.out.println("vol of woodbox" + woodbox.volume());
+	}	
+}

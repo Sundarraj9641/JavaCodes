@@ -1,0 +1,15 @@
+
+public class Source {
+	
+	// Static is used to call the function without creating the object
+	//void doesn't return any value
+	static void boxVolume(int length, int breath, int height) {    // Arguments
+		int vol = length*breath*height;                           
+		System.out.println(vol);        										  //return volume
+	}
+	public static void main(String[] args) {
+		// (2,4,6) Parameters
+		boxVolume(2,4,3); 	//calling the method                    
+		
+	}
+}
